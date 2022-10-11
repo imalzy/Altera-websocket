@@ -327,8 +327,10 @@
 
 <div class="content" role="main">
 
+  <p-chart type="line" [data]="data" width="40vw" height="80vh"></p-chart>
+
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
+  <div class="card highlight-card card-small" (click)="startWs()">
 
     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <title>Rocket Ship</title>
@@ -341,7 +343,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>Start Bitcoin</span>
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>

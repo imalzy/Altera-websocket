@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  websocket_bitcoint: 'wss://ws.coincap.io/prices?assets=bitcoin',
 };
 
 /*
